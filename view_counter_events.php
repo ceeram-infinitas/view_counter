@@ -19,7 +19,7 @@
 	 */
 
 	final class ViewCounterEvents extends AppEvents{
-		public function  onSetupCache($event, $data = null) {
+		public function onSetupCache($event, $data = null) {
 			return array(
 				'name' => 'view_counts',
 				'config' => array(
@@ -77,6 +77,16 @@
 			);
 
 			return $menu;
+		}
+
+		public function onPluginRollCall() {
+			return array(
+				'name' => 'View Counts',
+				'description' => 'View your sites traffic',
+				'icon' => '/view_counter/img/icon.png',
+				'author' => 'Infinitas',
+				'dashboard' => array('plugin' => 'view_counter', 'controller' => 'view_counts', 'action' => 'reports')
+			);
 		}
 
 		/**
