@@ -22,7 +22,10 @@
 	 */
 	$header = $link = '';
 	$byWeek = $conditions = array();
-
+	if(ClassRegistry::init('ViewCounter.ViewCount')->find('count') == 0){
+		return;
+	}
+	
 	if($this->plugin == 'view_counter' || $this->plugin == 'management'){
 		$conditions['month >= '] = date('m') - 1;
 		$byWeek = ClassRegistry::init('ViewCounter.ViewCount')->reportByDayOfMonth($conditions);
