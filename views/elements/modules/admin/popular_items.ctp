@@ -73,7 +73,7 @@
 					'axes' => array('x' => $byWeek['day'], 'y' => true),
 					'size' => array('width' => 430,'height' => 130),
 					'color' => array('series' => array('0d5c05', '03348a')),
-					'extra' => array('html' => array('class' => 'chart'), 'scale' => 'relative'),
+					'extra' => array('html' => array('class' => 'chart')),
 					'legend' => array(
 						'position' => 'top',
 						'labels' => array(

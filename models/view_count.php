@@ -19,6 +19,9 @@
 	 */
 
 	class ViewCount extends ViewCounterAppModel{
+		/**
+		 * @copydoc AppModel::name
+		 */
 		public $name = 'ViewCount';
 
 		/**
@@ -437,6 +440,61 @@
 		 * @return array the data by week
 		 */
 		public function reportDayOfWeek($conditions = array()){
+			$this->virtualFields = array(
+				'sub_total' => 'COUNT(ViewCount.id)'
+			);
+
+			$return = $this->find(
+				'all',
+				array(
+					'fields' => array(
+						'ViewCount.id',
+						'ViewCount.day_of_week',
+						'sub_total',
+						'ViewCount.created'
+					),
+					'conditions' => $conditions,
+					'group' => array(
+						'ViewCount.day_of_week'
+					)
+				)
+			);
+
+			$options = array(
+				'alias' => $this->alias,
+				'range' => range(1, 7),
+				'insert' => 'before',
+				'stats' => true,
+				'fields' => array('sub_total', 'day_of_week')
+			);
+
+			$return = $this->ChartDataManipulation->getFormatted($return, $options);
+
+			$return['day_of_week'] = isset($return['day_of_week']) ? $return['day_of_week'] : array();
+			foreach($return['day_of_week'] as $k => $v){
+				switch($v){
+					case 1: $return['day_of_week'][$k] = __('Sun', true); break;
+					case 2: $return['day_of_week'][$k] = __('Mon', true); break;
+					case 3: $return['day_of_week'][$k] = __('Tue', true); break;
+					case 4: $return['day_of_week'][$k] = __('Wen', true); break;
+					case 5: $return['day_of_week'][$k] = __('Thu', true); break;
+					case 6: $return['day_of_week'][$k] = __('Fri', true); break;
+					case 7: $return['day_of_week'][$k] = __('Sat', true); break;
+				}
+			}
+
+			return $return;
+		}
+
+		/**
+		 * report of data broken up into the 7 days of the week for selected
+		 * range.
+		 *
+		 * @param array $conditions the conditions to limit the data
+		 *
+		 * @return array the data by week
+		 */
+		public function reportLastTwoWeeks($conditions = array()){
 			$this->virtualFields = array(
 				'sub_total' => 'COUNT(ViewCount.id)'
 			);
