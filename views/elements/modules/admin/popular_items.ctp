@@ -25,7 +25,7 @@
 
 	if($this->plugin == 'view_counter' || $this->plugin == 'management'){
 		$conditions['month >= '] = date('m') - 1;
-		$byWeek = ClassRegistry::init('ViewCounter.ViewCount')->reportByWeek($conditions);
+		$byWeek = ClassRegistry::init('ViewCounter.ViewCount')->reportByDayOfMonth($conditions);
 		if(isset($byWeek['model'])){
 			$byWeek['model'] = pluginSplit($byWeek['model']);
 		}
@@ -37,13 +37,12 @@
 		if(isset($model)){
 			$conditions['ViewCount.model'] = $model;
 		}
-		$byWeek = ClassRegistry::init('ViewCounter.ViewCount')->reportByWeek($conditions);
+		$byWeek = ClassRegistry::init('ViewCounter.ViewCount')->reportByDayOfMonth($conditions);
 		if(!isset($byWeek['totals'])){
 			$byWeek['totals'] = array();
 		}
 		$header = sprintf(__('Views for the last few weeks', true));
 	}
-
 
 	if($this->plugin != 'view_counter'){
 		$link = $this->Html->link(
@@ -61,21 +60,26 @@
 	}
 ?>
 <div class="dashboard half">
-	<h1><?php echo sprintf('%s<small>%s<br/>Total: %s</small>', $header, $link, array_sum($byWeek['totals'])); ?></h1>
+	<h1><?php echo sprintf('%s<small>%s<br/>Total: %s</small>', $header, $link, $byWeek['stats']['total']); ?></h1>
 	<?php
-		if(!isset($byWeek['totals']) || empty($byWeek['totals'])){
+		if(!isset($byWeek['sub_total']) || empty($byWeek['sub_total'])){
 			?><span class="chart"><?php echo __('Not enough data collected'); ?></span><?php
 		}
 		else{
-			echo $this->Chart->display(
+			echo $this->Charts->draw(
 				'line',
 				array(
-					'data' => $byWeek['totals'],
-					'labels' => $byWeek['weeks'],
-					'size' => '430,130',
-					'html' => array(
-						'class' => 'chart'
-					)
+					'data' => array($byWeek['sub_total']),
+					'axes' => array('x' => $byWeek['day'], 'y' => true),
+					'size' => array('width' => 430,'height' => 130),
+					'color' => array('series' => array('0d5c05', '03348a')),
+					'extra' => array('html' => array('class' => 'chart'), 'scale' => 'relative'),
+					'legend' => array(
+						'position' => 'top',
+						'labels' => array(
+							__('Views', true),
+						)
+					),
 				)
 			);
 		}
