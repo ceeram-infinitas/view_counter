@@ -151,4 +151,10 @@
 			ClassRegistry::init('ViewCounter.ViewCount')->clearLocalhost();
 			return true;
 		}
+
+		public function onGetRequiredFixtures($event){
+			return array(
+				'ViewCounter.ViewCount',
+			);
+		}
 	}
