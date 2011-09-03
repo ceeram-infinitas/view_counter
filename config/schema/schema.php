@@ -1,6 +1,6 @@
 <?php 
 /* SVN FILE: $Id$ */
-/* ViewCounter schema generated on: 2011-07-20 22:07:31 : 1311196891*/
+/* ViewCounter schema generated on: 2011-09-03 23:09:53 : 1315090313*/
 class ViewCounterSchema extends CakeSchema {
 	var $name = 'ViewCounter';
 
@@ -17,7 +17,7 @@ class ViewCounterSchema extends CakeSchema {
 		'foreign_key' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 10),
 		'ip_address' => array('type' => 'string', 'null' => false, 'default' => '?', 'length' => 15, 'key' => 'index', 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'year' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'year' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 4, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'month' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 4),
 		'day' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 4),
 		'hour' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 4),
