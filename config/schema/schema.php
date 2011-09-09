@@ -1,6 +1,6 @@
 <?php 
 /* SVN FILE: $Id$ */
-/* ViewCounter schema generated on: 2011-09-03 23:09:53 : 1315090313*/
+/* ViewCounter schema generated on: 2011-09-09 13:09:55 : 1315570795*/
 class ViewCounterSchema extends CakeSchema {
 	var $name = 'ViewCounter';
 
@@ -15,7 +15,7 @@ class ViewCounterSchema extends CakeSchema {
 		'id' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36, 'key' => 'primary', 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'model' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'foreign_key' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 36, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 10),
+		'user_id' => array('type' => 'string', 'null' => false, 'default' => '0', 'length' => 36, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'ip_address' => array('type' => 'string', 'null' => false, 'default' => '?', 'length' => 15, 'key' => 'index', 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'year' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 4, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'month' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 4),
