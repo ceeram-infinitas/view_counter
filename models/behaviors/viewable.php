@@ -90,6 +90,8 @@
 			$view['ViewCount']['day_of_year'] = date('z');
 			$view['ViewCount']['week_of_year'] = date('W');
 			$view['ViewCount']['hour'] = date('G'); // no leading 0
+			
+			$view['ViewCount']['city'] = $view['ViewCount']['city'] ? $view['ViewCount']['city'] : 'Unknown';
 
 			/**
 			 * http://dev.mysql.com/doc/refman/5.1/en/date-and-time-functions.html#function_dayofweek
