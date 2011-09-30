@@ -239,9 +239,9 @@
 			$data['new_visitors']['total_views'] = count($newVisitors);
 			$data['new_visitors']['ratio'] = ($data['new_visitors']['total_views'] / $data['unique_views']['total_views']) * 100;
 			$dates = Set::extract('/' . $this->alias . '/created', $newVisitors);
-			$data['new_visitors']['start_date'] = min($dates);
-			$data['new_visitors']['end_date'] = max($dates);
-			$data['new_visitors']['views_per_visit'] = $data['total_views'] / $data['new_visitors']['total_views'];
+			$data['new_visitors']['start_date'] = count($dates) > 0 ? min($dates) : date('Y-m-d H:i:s');
+			$data['new_visitors']['end_date'] = count($dates) > 0 ? max($dates) : date('Y-m-d H:i:s');
+			$data['new_visitors']['views_per_visit'] = $data['new_visitors']['total_views'] > 0 ? $data['total_views'] / $data['new_visitors']['total_views'] : 0;
 			unset($data['unique_views']['visits'], $newVisitors, $dates);
 
 			$conditions[$this->alias . '.user_id'] = 0;

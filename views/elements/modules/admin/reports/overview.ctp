@@ -20,19 +20,21 @@
 			);
 			$uniqueVisitMap = $this->Chart->output;
 
-			$this->Chart->display(
-				'map',
-				array(
-					'data' => array_fill(0, count($overview['new_visitors']['country_codes']), 1),
-					'places' => $overview['new_visitors']['country_codes'],
-					'size' => '600,370',
-					'colors' => array(
-						'DBDBDB', // background
-						'BFF7AA', // from
-						'1A5903'  // to
+			if(count($overview['new_visitors']['country_codes'])) {
+				$this->Chart->display(
+					'map',
+					array(
+						'data' => array_fill(0, count($overview['new_visitors']['country_codes']), 1),
+						'places' => $overview['new_visitors']['country_codes'],
+						'size' => '600,370',
+						'colors' => array(
+							'DBDBDB', // background
+							'BFF7AA', // from
+							'1A5903'  // to
+						)
 					)
-				)
-			);
+				);
+			}
 			$newVisitorMap = $this->Chart->output;
 			?>
 				<table class="listing">
