@@ -51,6 +51,32 @@
 			}
 
 			$this->__settings[$Model->alias] = am($this->__settings[$Model->alias], ife(is_array($settings), $settings, array()));
+			$Model->bindModel(
+				array(
+					'hasMany' => array(
+						'ViewCount' => array(
+							'className' => 'ViewCounter.ViewCount',
+							'foreignKey' => 'foreign_key',
+							'conditions' => array(
+								'model' => $Model->plugin.'.'.$Model->alias
+							),
+							'limit' => 0
+						)
+					)
+				)
+			);
+
+			$Model->ViewCount->bindModel(
+				array(
+					'belongsTo' => array(
+						$Model->alias => array(
+							'className' => $Model->alias,
+							'foreignKey' => 'foreign_key',
+							'counterCache' => 'views'
+						)
+					)
+				)
+			);
 		}
 
 		/**
@@ -60,7 +86,7 @@
 		 * @return boolean true if save should proceed, false otherwise
 		 * @access public
 		 */
-		public function afterFind(&$Model, $data) {
+		public function afterFind($Model, $data) {
 			// skip finds with more than one result.
 			if (empty($data) || isset($data[0][0]['count']) || isset($data[0]) && count($data) > 1 || !isset($data[0][$Model->alias][$Model->primaryKey])) {
 				return $data;
