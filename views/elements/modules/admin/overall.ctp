@@ -33,20 +33,33 @@
 						$labels[] = $a++;
 					}
 					
-					echo $this->Chart->display(
+					echo $this->Charts->draw(
 						array(
-							'name' => 'bar',
-							'type' => 'vertical',
-							'bar' => 'vertical'
+							'bar' => array(
+								'type' => 'vertical',
+								'bar' => 'vertical'
+							)
 						),
 						array(
 							'data' => array_values($viewStats),
-							'labels' => $labels,
-							'size' => '280,130',
-							'colors' => array(
-								'#001A4D',
-								'#4D81A8'
+							'axes' => array(
+								'x' => $labels,
+								'y' => array('0', 100)
 							),
+							'size' => array(
+								280,
+								130
+							),
+							'color' => array(
+								'background' => 'FFFFFF',
+								'fill' => 'FFCC33',
+								'text' => '989898',
+								'lines' => '989898',
+							),
+							'spacing' => array(
+								'padding' => 6
+							),
+							'tooltip' => 'Something Cool :: figure1: %s<br/>figure1: %s<br/>figure3: %s',
 							'html' => array(
 								'class' => 'chart'
 							)
