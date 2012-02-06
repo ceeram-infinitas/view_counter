@@ -18,13 +18,15 @@
 	 * Redistributions of files must retain the above copyright notice.
 	 */
 
-	$viewStats = ClassRegistry::init('ViewCounter.ViewCount')->getGlobalTotalCount();
-	if(empty($viewStats)){
-		return;
+	if(empty($viewStats)) {
+		$viewStats = ClassRegistry::init('ViewCounter.ViewCount')->getGlobalTotalCount();
+		if(empty($viewStats)) {
+			return;
+		}
 	}
 		?>
 			<div class="dashboard half">
-				<h1><?php echo sprintf(__('Overall Usage', true)); ?></h1>
+				<h1><?php echo sprintf(__('Overall Usage [%d views]', true), array_sum($viewStats)); ?></h1>
 				<?php
 					$a = 'A';
 					$labels = array();
@@ -32,14 +34,18 @@
 					for($i = 0; $i < $count; $i++){
 						$labels[] = $a++;
 					}
+
+
+					$i = 0;
+					$legend = array();
+					foreach($viewStats as $model => $count){
+						$model = prettyName(str_replace('.', '', Inflector::singularize($model)));
+						$legend[] = sprintf(__('%s: %s %s views', true), $labels[$i], $count, $model);
+						++$i;
+					}
 					
 					echo $this->Charts->draw(
-						array(
-							'bar' => array(
-								'type' => 'vertical',
-								'bar' => 'vertical'
-							)
-						),
+						'pie',
 						array(
 							'data' => array_values($viewStats),
 							'axes' => array(
@@ -47,7 +53,7 @@
 								'y' => array('0', 100)
 							),
 							'size' => array(
-								280,
+								450,
 								130
 							),
 							'color' => array(
@@ -62,21 +68,15 @@
 							'tooltip' => 'Something Cool :: figure1: %s<br/>figure1: %s<br/>figure3: %s',
 							'html' => array(
 								'class' => 'chart'
+							),
+							'legend' => array(
+								'position' => 'bottom',
+								'order' => 'default',
+								'labels' => $legend
 							)
 						)
 					);
 				?>
-				<ul class="info">
-					<?php
-						$i = 0;
-						foreach($viewStats as $model => $count){
-							$model = prettyName(str_replace('.', '', Inflector::singularize($model)));
-							?><li><?php echo sprintf(__('%s: %s %s views', true), $labels[$i], $count, $model); ?></li><?php
-							++$i;
-						}
-					?>
-					<li><?php echo sprintf(__('%s views in total', true), array_sum($viewStats)); ?></li>
-				</ul>
 			</div>
 		<?php
 ?>
