@@ -49,7 +49,7 @@
 		public function initialize($Controller, $settings = array()){
 			if(!isset($this->Controller->modelClass) || !isset($this->Controller->{$this->Controller->modelClass})){
 				// no model being used.
-				return false;
+				return true;
 			}
 
 			$settings = array_merge($this->__settings, (array)$settings);
