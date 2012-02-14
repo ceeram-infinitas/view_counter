@@ -46,8 +46,8 @@
 		 *
 		 * @return null nothing needed
 		 */
-		public function initialize(&$Controller, $settings = array()){
-			if(!isset($Controller->{$Controller->modelClass})){
+		public function initialize($Controller, $settings = array()){
+			if(!isset($this->Controller->modelClass) || !isset($this->Controller->{$this->Controller->modelClass})){
 				// no model being used.
 				return false;
 			}
