@@ -1,7 +1,6 @@
 <?php
 	class ViewCounterViewsController extends ViewCounterAppController {
 		public $helpers = array(
-			'Filter.Filter',
 			'Charts.Charts' => array(
 				'Google.GoogleStatic'
 			)
