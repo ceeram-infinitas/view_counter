@@ -38,7 +38,7 @@
 	else{
 		$conditions['month >= '] = date('m') -3;
 		if(isset($model)){
-			$conditions['ViewCount.model'] = $model;
+			$conditions['ViewCounterView.model'] = $model;
 		}
 		$byWeek = ClassRegistry::init('ViewCounter.ViewCounterView')->reportByDayOfMonth($conditions);
 		if(!isset($byWeek['totals'])){
@@ -54,7 +54,7 @@
 				'plugin' => 'view_counter',
 				'controller' => 'view_counter_views',
 				'action' => 'reports',
-				'ViewCount.model' => isset($class) ? $class : ''
+				'ViewCounterView.model' => isset($class) ? $class : ''
 			),
 			array(
 				'class' => 'chart'
