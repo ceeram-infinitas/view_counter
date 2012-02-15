@@ -30,7 +30,7 @@ class ViewCountFixture extends CakeTestFixture {
 	var $records = array(
 		array(
 			'id' => '4ca682b2-dae8-4420-89d4-44205fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -49,7 +49,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca682b3-bf1c-4781-bbd1-44245fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -68,7 +68,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca682b6-48b8-4e62-95a5-44335fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '2',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -87,7 +87,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca682b8-9764-4ec4-8f09-443c5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -106,7 +106,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca68340-c27c-41b2-98f4-47be5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -125,7 +125,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca8d360-e81c-4172-b1e6-276d5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -144,7 +144,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca8f6fc-fc24-4be5-b667-01ff5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -163,7 +163,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca8fa93-e954-4528-a620-14355fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -182,7 +182,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca8fdd8-0c4c-45be-ba94-23655fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -201,7 +201,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca8fe9c-e43c-4dc7-85aa-286b5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -220,7 +220,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca8ff85-1558-4326-a044-2d5f5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -239,7 +239,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca905f0-e778-4494-8957-49665fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -258,7 +258,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca907ee-b3e8-4559-9414-526e5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -277,7 +277,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca90b01-09c4-4967-b3dc-60a75fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -296,7 +296,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca97b67-ef04-45d1-80d8-063e5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '81.157.69.81',
@@ -315,7 +315,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca97bc1-bea0-4b8d-8108-09095fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '207.46.204.236',
@@ -334,7 +334,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca97bff-8a48-43d5-b3d0-0aa05fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '81.157.69.81',
@@ -353,7 +353,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca97ca4-1734-41b3-be99-0e6b5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '81.157.69.81',
@@ -372,7 +372,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca97ec2-c0f8-40cb-864f-18d55fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 1,
 			'ip_address' => '81.157.69.81',
@@ -391,7 +391,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca98ba6-a7c4-43b4-b707-6c915fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '66.249.65.186',
@@ -410,7 +410,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9920b-deb4-410a-a8af-1e325fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '66.249.65.186',
@@ -429,7 +429,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca99cd8-25ac-4080-a7d3-7d445fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '66.249.65.186',
@@ -448,7 +448,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9adbd-8a70-44fa-ac49-19b05fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -467,7 +467,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9adcc-30a8-4aea-a873-1a165fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -486,7 +486,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9adcf-9078-4722-a0fd-1a455fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -505,7 +505,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9add9-3e34-47e6-9e10-1ae95fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -524,7 +524,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9adeb-c078-4f71-b4be-1c5d5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -543,7 +543,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae02-a9e8-4629-a13c-1cef5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -562,7 +562,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae1c-7b54-42fc-97b2-1dcf5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '2',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -581,7 +581,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae20-f9f8-4d52-bd94-1de45fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -600,7 +600,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae51-d2f8-42bc-8f15-1f745fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -619,7 +619,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae55-f75c-4ab7-9379-1f7b5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -638,7 +638,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae62-7d70-49e5-8521-1fb05fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -657,7 +657,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9ae6f-73d0-4343-94b4-201a5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.25',
@@ -676,7 +676,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9dd2e-b7ec-47b1-9572-73eb5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -695,7 +695,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4ca9f6b8-2c64-4a39-8a63-65505fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '2',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -714,7 +714,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19ee-ca10-438c-bafb-20b85fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '2',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -733,7 +733,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19f1-c9e0-4667-9811-20d95fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -752,7 +752,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19f3-1030-4ad8-bd3f-20f75fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -771,7 +771,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19f5-f3a4-4c67-8066-21005fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -790,7 +790,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19f7-1be4-4399-bf83-21115fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -809,7 +809,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19fa-30ac-425d-9ccd-21225fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -828,7 +828,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19fb-42e4-4b7a-b6fa-21405fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -847,7 +847,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa19fe-3cd4-4e5c-973b-21575fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -866,7 +866,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa1a00-3158-436e-9d27-21635fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '81.36.139.215',
@@ -885,7 +885,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa2b2e-1330-4223-8463-2b915fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -904,7 +904,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa2d03-d214-460a-a855-3a925fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '213.46.28.72',
@@ -923,7 +923,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa2d27-290c-4b7a-990b-3b9b5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '213.46.28.72',
@@ -942,7 +942,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa4ee5-83e4-49e9-b976-24c15fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -961,7 +961,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5d9e-9340-4f9b-a2db-74535fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '86.3.112.44',
@@ -980,7 +980,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e57-f950-4ed3-9eee-78885fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -999,7 +999,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e63-c30c-4bbe-8049-78c35fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1018,7 +1018,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e67-76ec-4876-878b-78d85fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1037,7 +1037,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e79-1508-4ae7-843a-78f65fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1056,7 +1056,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e83-6ac4-402f-8520-79255fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1075,7 +1075,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e8f-cbe0-4c7a-a30e-79575fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1094,7 +1094,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e98-f840-4904-8e99-79635fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '2',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1113,7 +1113,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5e9c-bec4-41ba-83f3-79745fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1132,7 +1132,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5eb3-6cd0-49bf-8f4f-79a85fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1151,7 +1151,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5eba-dfe0-4805-ae67-79b05fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1170,7 +1170,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5ebe-6f34-4db8-8fd9-79c15fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1189,7 +1189,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa5ec2-9550-478d-be2d-79c85fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '92.241.182.24',
@@ -1208,7 +1208,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa60ec-23e0-4315-90b1-055e5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -1227,7 +1227,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caa87de-a454-4cc0-87e8-394a5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -1246,7 +1246,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caabc98-036c-4f0d-8a06-45ef5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -1265,7 +1265,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac430-8b30-4b96-af46-20875fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '66.249.66.39',
@@ -1284,7 +1284,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac751-64a0-4a0d-8cfb-30585fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1303,7 +1303,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac792-cbc0-494a-9fe5-316d5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '8',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1322,7 +1322,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac79b-ed38-4abf-97fb-31865fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1341,7 +1341,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac7f6-52e0-4cd9-bb21-33865fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '6',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1360,7 +1360,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac82a-62d0-4459-83d2-341f5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '5',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1379,7 +1379,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac8ab-e4d4-4e91-9b62-36dc5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '1',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1398,7 +1398,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caac96c-0f78-403e-b1b7-3a245fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1417,7 +1417,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4caaef48-1d58-49df-916b-49dd5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '7',
 			'user_id' => 0,
 			'ip_address' => '67.195.115.169',
@@ -1436,7 +1436,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4cab0ecc-312c-4dec-8f5a-67905fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '2',
 			'user_id' => 0,
 			'ip_address' => '80.57.152.117',
@@ -1455,7 +1455,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4cab0ece-f0bc-4863-85ff-67a25fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '3',
 			'user_id' => 0,
 			'ip_address' => '80.57.152.117',
@@ -1474,7 +1474,7 @@ class ViewCountFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => '4cab0ed0-b204-411a-9af0-67bc5fd7e115',
-			'model' => 'Blog.Post',
+			'model' => 'Blog.BlogPost',
 			'foreign_key' => '4',
 			'user_id' => 0,
 			'ip_address' => '80.57.152.117',

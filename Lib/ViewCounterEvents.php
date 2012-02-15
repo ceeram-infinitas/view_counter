@@ -67,7 +67,7 @@
 			$Model->Behaviors->attach('ViewCounter.Viewable');
 			$views = $Model->getToalViews($data['post']['Post']['id']);
 
-			return $this->__views($views, 'Blog.Post');
+			return $this->__views($views, 'Blog.BlogPost');
 		}
 
 		public function onAdminMenu($event){
