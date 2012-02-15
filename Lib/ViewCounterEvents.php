@@ -132,7 +132,7 @@
 		 * attach the reporting behavior for models with views
 		 */
 		public function onAttachBehaviors($event) {
-			if(is_subclass_of($event->Handler, 'Model') && isset($event->Handler->_schema) && is_array($event->Handler->_schema)) {
+			if($event->Handler->shouldAutoAttachBehavior()) {
 				if ($event->Handler->hasField('views')) {
 					$event->Handler->Behaviors->attach('ViewCounter.ViewableReporting');
 				}
